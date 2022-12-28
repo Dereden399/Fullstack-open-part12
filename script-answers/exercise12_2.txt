@@ -1,0 +1,19 @@
+Script started on Sat Dec 24 20:27:52 2022
+Restored session: Sat Dec 24 14:56:51 EET 2022
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-Denis.local/Users/denis/Documents/Work%20and%20Projects/Fullstack-open-part12/script-answers[0m[27m[24m[Jdenis@MacBook-Air-Denis script-answers % [K[?2004hddocker run -it ubuntu bash[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K10175de2f0c4: Pulling fs layer [1B[1A[2K10175de2f0c4: Downloading  294.9kB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  2.644MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  7.355MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  10.29MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  12.93MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  15.89MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  18.55MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  21.49MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  24.72MB/28.38MB[1B[1A[2K10175de2f0c4: Downloading  27.06MB/28.38MB[1B[1A[2K10175de2f0c4: Verifying Checksum [1B[1A[2K10175de2f0c4: Download complete [1B[1A[2K10175de2f0c4: Extracting  294.9kB/28.38MB[1B[1A[2K10175de2f0c4: Extracting  10.03MB/28.38MB[1B[1A[2K10175de2f0c4: Extracting  21.82MB/28.38MB[1B[1A[2K10175de2f0c4: Extracting  28.02MB/28.38MB[1B[1A[2K10175de2f0c4: Extracting  28.38MB/28.38MB[1B[1A[2K10175de2f0c4: Pull complete [1BDigest: sha256:27cb6e6ccef575a4698b66f5de06c7ecd61589132d5a91d098f7f3f9285415a9
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@c3dd5e0d7098: /root@c3dd5e0d7098:/# [K]0;root@c3dd5e0d7098: /root@c3dd5e0d7098:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@c3dd5e0d7098: /root@c3dd5e0d7098:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@c3dd5e0d7098: /root@c3dd5e0d7098:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-Denis.local/Users/denis/Documents/Work%20and%20Projects/Fullstack-open-part12/script-answers[0m[27m[24m[Jdenis@MacBook-Air-Denis script-answers % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sat Dec 24 20:33:21 2022

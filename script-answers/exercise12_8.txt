@@ -1,0 +1,75 @@
+Script started on Wed Dec 28 20:40:18 2022
+[1m[7m%[27m[1m[0m                                                                                                                                             ]7;file://MacBook-Air-Denis.local/Users/denis/Documents/Work%20and%20Projects/Fullstack-open-part12/script-answers[0m[27m[24m[Jdenis@MacBook-Air-Denis script-answers % [K[?2004hddocker container ls[?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                     NAMES
+caaca2927215   mongo     "docker-entrypoint.s…"   48 minutes ago   Up 13 minutes   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                                                                                             ]7;file://MacBook-Air-Denis.local/Users/denis/Documents/Work%20and%20Projects/Fullstack-open-part12/script-answers[0m[27m[24m[Jdenis@MacBook-Air-Denis script-answers % [K[?2004hddocker exec -it todo-backend-mongo-1 bash[?2004l
+root@caaca2927215:/# mongosh -u root -p example
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	63ac8dd79273c24b41405e07
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.1[0m
+Using MongoDB:		6.0.3
+[1m[33mUsing Mongosh[0m:		1.6.1
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2022-12-28T18:27:43.244+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1m[33m------[0m
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         72.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.insseet[1G[0Jthe_database> db.todos.inssee[30G[1G[0Jthe_database> db.todos.insse[29G[1G[0Jthe_database> db.todos.inss[28G[1G[0Jthe_database> db.todos.ins[27Gert()[1D[1G[0Jthe_database> db.todos.insert[44m([49m)[31G[1G[0Jthe_database> db.todos.insert[44m([49m{)[32G[1G[0Jthe_database> db.todos.insert[44m([49m{})[33G[1D[1G[0Jthe_database> db.todos.insert([44m{[49m})[32G[1G[0Jthe_database> db.todos.insert([44m{[49mt})[33G[1G[0Jthe_database> db.todos.insert([44m{[49mte})[34G[1G[0Jthe_database> db.todos.insert([44m{[49mtex})[35G[1G[0Jthe_database> db.todos.insert([44m{[49mtext})[36G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m:})[37G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: })[38G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"})[39m[39G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m""[39m})[40G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"})[39m[39G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: })[38G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"})[39m[39G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"I})[39m[40G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"In})[39m[41G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Inc})[39m[42G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Incr})[39m[43G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Incre})[39m[44G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increa})[39m[45G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increas})[39m[46G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase})[39m[47G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase })[39m[48G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase t})[39m[49G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase th})[39m[50G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the})[39m[51G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the })[39m[52G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the n})[39m[53G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the nu})[39m[54G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the num})[39m[55G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the numb})[39m[56G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the numbe})[39m[57G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number})[39m[58G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number })[39m[59G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number o})[39m[60G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of})[39m[61G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of })[39m[62G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of t})[39m[63G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of to})[39m[64G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of too})[39m[65G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tool})[39m[66G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools})[39m[67G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools })[39m[68G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools i})[39m[69G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in})[39m[70G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in })[39m[71G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in m})[39m[72G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my})[39m[73G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my })[39m[74G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my t})[39m[75G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my to})[39m[76G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my too})[39m[77G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool})[39m[78G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my toolb})[39m[79G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my toolbe})[39m[80G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my toolbel})[39m[81G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my toolbelt})[39m[82G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[83G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m,})[84G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, })[85G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, d})[86G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [36mdo[39m})[87G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, don})[88G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, done})[89G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:})[90G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: })[91G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: f})[92G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: fa})[93G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: fal})[94G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: fals})[95G[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[96G[1C[1G[0Jthe_database> db.todos.insert[44m([49m{[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[97G[1C[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[98G
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: [33mtrue[39m,
+  insertedIds: { [32m'0'[39m: ObjectId("63ac8e232ca43b599f6938fc") }
+}
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId("63ac7f274118bde572700643"),
+    done: [33mtrue[39m,
+    text: [32m'some text'[39m
+  },
+  {
+    _id: ObjectId("63ac7f274118bde572700644"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("63ac8e232ca43b599f6938fc"),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+root@caaca2927215:/# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                                                                             ]7;file://MacBook-Air-Denis.local/Users/denis/Documents/Work%20and%20Projects/Fullstack-open-part12/script-answers[0m[27m[24m[Jdenis@MacBook-Air-Denis script-answers % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...      12 completed.
+
+Script done on Wed Dec 28 20:43:14 2022
